@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Студия</title>
+
+
 </head>
 
 <body>
@@ -62,7 +64,7 @@
         <section class="hero">
             <div class="hero-container container">
                 <h1 class="hero_title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="main_hero_btn">Заказать услугу</button>
+                <button type="button" data-modal-open class="main_hero_btn">Заказать услугу</button>
             </div>
         </section>
         <section class="peculiarities section">
@@ -125,13 +127,22 @@
                 <h2 class="our_work_title">Чем мы занимаемся</h2>
                 <ul class="our_work_list list">
                     <li class="our_work_item">
-                        <img src="./images/img-1.jpg" alt="Програмист пишет код" width="370" height="294" />
+                        <img src="./images/img-1.jpg" alt="Десктопные приложения" width="370" height="294" />
+                        <p class="our-work-img-text">
+                            Десктопные приложения
+                        </p>
                     </li>
                     <li class="our_work_item">
-                        <img src="./images/img-2.jpg" alt="Дизайнер моделирует интерфейс" width="370" height="294" />
+                        <img src="./images/img-2.jpg" alt="Мобильные приложения" width="370" height="294" />
+                        <p class="our-work-img-text">
+                            Мобильные приложения
+                        </p>
                     </li>
                     <li class="our_work_item">
-                        <img src="./images/img-3.jpg" alt="Дизайнер выбирают цветовую гамму" width="370" height="294" />
+                        <img src="./images/img-3.jpg" alt="Дизайнерские решения" width="370" height="294" />
+                        <p class="our-work-img-text">
+                            Дизайнерские решения
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -396,6 +407,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="modal_close_icon">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
